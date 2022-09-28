@@ -1,0 +1,93 @@
+.videogames {
+    display: flex;
+    background-color: rgba(11, 4, 14, 0.6);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 3px 3px 5px 1px #aa35e0;
+    border-start-end-radius: 50px;
+    border-end-start-radius: 50px;
+    border: 2px solid #061444;
+    width: 300px;
+    height: 350px;
+    padding: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 5px 1px #aa35e0;
+    height: 250px;
+    width: 300px;
+    border-start-end-radius: 50px;
+    border-end-start-radius: 50px;
+
+}
+
+.namecointainer {
+    display: flex;
+    justify-content: center;
+}
+
+.gamesName {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 500;
+    text-shadow: 6px 4px 5px rgba(124, 40, 150, 0.45);
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.gamesName:hover {
+    overflow: visible;
+}
+
+.genrescointainer {
+    display: flex;
+    justify-content: center;
+
+}
+
+.genres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 3px;
+    text-decoration: none;
+
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 300;
+}
+
+@keyframes bounce {
+    30% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+}
+
+.img {
+    animation: bounce 1s;
+}
+
+.videogames {
+    transition: all .2s ease-in-out;
+}
+
+.videogames:hover {
+    transform: scale(0.8);
+}

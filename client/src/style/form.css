@@ -1,0 +1,146 @@
+.addVideogames {
+    background-image: url('../images/pexels-cottonbro-3945655.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.prettierForm {
+    margin-left: auto;
+    margin-right: auto;
+    align-content: space-around;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 500px;
+    box-shadow: 3px 3px 5px 1px #4c7c7c;
+    background-color: rgb(231, 218, 218, 0.3);
+}
+
+.goBackButton {
+    color: rgb(231, 218, 218);
+    background-color: #4c7c7c;
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 25px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 1px #4c7c7c;
+    cursor: pointer;
+}
+
+.goBackButton:hover {
+    color: #061444;
+    background-color: #c2eeee;
+}
+
+.submitButton {
+    color: rgb(231, 218, 218);
+    background-color: #4c7c7c;
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 25px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 1px #4c7c7c;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    color: #061444;
+    background-color: #c2eeee;
+}
+
+.msg {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 35px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(6, 6, 75);
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 3px 2px 3px #4c7c7c;
+}
+
+.msgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 3px;
+    color: rgb(6, 6, 75);
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 3px 2px 3px #4c7c7c;
+}
+
+.input-name {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.checkSelect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+
+}
+
+.dietTypes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(0, 0, 0);
+}
+
+.checks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.errors {
+    font-family: sans-serif;
+    color: #f51000;
+    font-size: 14px;
+}
+
+.deleteBtn {
+    height: 20px;
+    width: 20px;
+    margin: 7px 5px;
+    border-color: white;
+    background-color: rgb(189, 15, 15);
+    border-radius: 20px;
+    text-align: justify;
+}
+
+.deleteBtn:hover {
+    background-color: #f51000;
+}

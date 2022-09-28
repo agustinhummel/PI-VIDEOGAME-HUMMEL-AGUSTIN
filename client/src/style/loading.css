@@ -1,0 +1,47 @@
+.conteiner {
+    background: #aa35e0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+}
+
+.carga {
+    border: 15px solid violet;
+    border-top-color: blueviolet;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    margin-bottom: 40px;
+    margin-top: 100px;
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate (0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loadingTitle {
+    color: wheat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
