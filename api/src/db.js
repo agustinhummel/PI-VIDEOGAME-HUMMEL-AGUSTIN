@@ -6,7 +6,7 @@ const {
   SERVER_DB
 } = process.env;
 
-const sequelize = new Sequelize({
+const sequelize = new Sequelize(SERVER_DB, {
   dialect: 'postgres',
   protocol: 'postgres',
   logging: false,
