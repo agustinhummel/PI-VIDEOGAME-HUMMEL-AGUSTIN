@@ -21,7 +21,7 @@ export default function Home() {
     const [order, setOrder] = useState('');
 
     const [page, setPage] = useState(1);
-    const [forPage, setForPage] = useState(15);
+    const [forPage] = useState(15);
 
     const max = Math.ceil(getAllVideogame.length / forPage);
 
@@ -31,11 +31,11 @@ export default function Home() {
         if (e.target.value === 'all') {
             dispatch(getVideogame())
             setPage(1)
-            setOrder(`Order ${e.target.value}`);
+            setOrder(`${order} ${e.target.value}`);
         } else {
             dispatch(ratingSort(e.target.value));
             setPage(1)
-            setOrder(`Order ${e.target.value}`);
+            setOrder(`${order} ${e.target.value}`);
         }
     }
 
@@ -43,14 +43,14 @@ export default function Home() {
         e.preventDefault();
         dispatch(sortByName(e.target.value));
         setPage(1)
-        setOrder(`Order ${e.target.value}`);
+        setOrder(`${order} ${e.target.value}`);
 
     }
     function handleGenresFilter(e) {
         e.preventDefault();
         dispatch(filterByGenres(e.target.value))
         setPage(1)
-        setOrder(`Order ${e.target.value}`);
+        setOrder(`${order} ${e.target.value}`);
     }
 
     function handleVideogames(e) {

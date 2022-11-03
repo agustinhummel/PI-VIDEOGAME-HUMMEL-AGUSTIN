@@ -21,7 +21,7 @@ export default function SearchBar() {
         if (name.length === 0) {
             searcher()
         }
-    }, [name])
+    })
 
     return (
         <div className="search" >

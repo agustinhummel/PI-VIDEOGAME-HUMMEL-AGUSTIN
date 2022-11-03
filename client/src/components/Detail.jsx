@@ -14,7 +14,7 @@ export default function Details(id) {
 
     useEffect(() => {
         dispatch(getDetail(id))
-    }, [dispatch])
+    }, [dispatch, id])
 
 
     return (

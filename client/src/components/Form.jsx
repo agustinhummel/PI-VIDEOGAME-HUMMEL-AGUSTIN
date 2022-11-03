@@ -75,7 +75,7 @@ export default function Form() {
     const submit = function (e) {
         e.preventDefault();
         if (
-            input.name && input.name != " " &&
+            input.name && input.name !== " " &&
             input.description &&
             input.rating && input.rating > 1 && input.rating <= 5 &&
             input.image &&
@@ -137,7 +137,7 @@ export default function Form() {
                                             </div>
                                         )
                                     })}
-                                    {input.platforms.length == 0 && (<p className="errors">{errors.platforms}</p>)}
+                                    {input.platforms.length === 0 && (<p className="errors">{errors.platforms}</p>)}
                                 </div>
                                 <div >
                                     <label className="msgs">Genres: </label>
@@ -149,7 +149,7 @@ export default function Form() {
                                             </div>
                                         )
                                     })}
-                                    {input.genres.length == 0 && (<p className="errors">{errors.genres}</p>)}
+                                    {input.genres.length === 0 && (<p className="errors">{errors.genres}</p>)}
                                 </div>
                                 <div className="input-name">
                                     <label className="msgs">Image</label>

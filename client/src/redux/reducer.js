@@ -22,7 +22,6 @@ export default function rootReducer(state = initialState, action) {
                 allvideogames: action.payload,
                 gamesDetail: action.payload,
                 filterByName: [],
-                gamesDetail: [],
                 apiGames: action.payload.filter((vg) => !vg.createInDb),
                 dbGames: action.payload.filter((vg) => vg.createInDb),
             };
