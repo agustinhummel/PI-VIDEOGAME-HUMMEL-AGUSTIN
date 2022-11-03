@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import '../style/card.css'
 
 
-export default function Card({ id, name, image, genres }) {
+export default function Card({ id, name, image, rating, genres }) {
     return (
         <div className="videogames">
             <Link to={`/videogames/${id}`} >
@@ -16,7 +16,6 @@ export default function Card({ id, name, image, genres }) {
                 <div className="genrescointainer">
                     <h3 className="genres">{genres}</h3>
                 </div>
-
             </Link>
         </div>
     )

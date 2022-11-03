@@ -41,15 +41,10 @@ export default function Home() {
 
     function handleAlphabeticalSort(e) {
         e.preventDefault();
-        if (e.target.value === 'all') {
-            dispatch(getVideogame())
-            setPage(1)
-            setOrder(`Order ${e.target.value}`);
-        } else {
-            dispatch(sortByName(e.target.value));
-            setPage(1)
-            setOrder(`Order ${e.target.value}`);
-        }
+        dispatch(sortByName(e.target.value));
+        setPage(1)
+        setOrder(`Order ${e.target.value}`);
+
     }
     function handleGenresFilter(e) {
         e.preventDefault();

@@ -8,7 +8,6 @@ const { YOUR_API_KEY } = process.env;
 
 
 const getVideogames = async (req, res) => {
-
     const { name } = req.query
     if (name) {
         let videogamesName = await axios.get(`${api}?key=${YOUR_API_KEY}&search=${name}&page_size=15`)
@@ -132,19 +131,6 @@ const getPlatforms = async (req, res) => {
     }
 }
 
-const deleteVideogames = async (req, res) => {
-    const { name } = req.query
-    try {
-        let games = await Videogame.findAll({ where: { name } })
-        if (games) {
-            await Videogame.destroy({ where: { name } })
-            res.status(200).send(`delete ${name}`)
-        }
-    } catch (error) {
-        res.status(400).send('imposible eliminar')
-    }
-}
-
 
 module.exports = {
     getVideogames,
@@ -152,6 +138,5 @@ module.exports = {
     getById,
     createVideogame,
     getPlatforms,
-    deleteVideogames,
     router,
 }

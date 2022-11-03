@@ -1,0 +1,30 @@
+//  NUEVO FILTRO 
+// case FILTER_RELESED:
+//     let map = state.videogames.filter((e) => parseInt(e.released.slice(0, 4)) < 2010)
+//     return {
+//         ...state,
+//         videogames: map
+//     }
+
+
+// RUTA DELETE 
+// const deleteVideogames = async (req, res) => {
+//     const { name } = req.query
+//     try {
+//         let games = await Videogame.findAll({ where: { name } })
+//         if (games) {
+//             await Videogame.destroy({ where: { name } })
+//             res.status(200).send(`delete ${name}`)
+//         }
+//     } catch (error) {
+//         res.status(400).send('imposible eliminar')
+//     }
+
+// DE ASYNC AWAIT A PROMESA 
+// export function getVideogame() {
+//     return function (dispatch) {
+//         return fetch(`http://localhost:3001/videogames`)
+//             .then((data) => data.json())
+//             .then((json) => dispatch({ type: GET_VIDEOGAME, payload: json }));
+//     };
+// }
